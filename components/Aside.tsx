@@ -15,6 +15,7 @@ export default function Aside({ paginaAtual, setPaginaAtual }: AsideProps) {
     { id: "atividade6", label: "Atividade 6" },
     { id: "atividade7", label: "Atividade 7" },
     { id: "atividade8", label: "Atividade 8" },
+    { id: "atividade9", label: "Atividade 9" },
   ];
 
   return (

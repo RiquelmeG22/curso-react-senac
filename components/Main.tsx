@@ -9,6 +9,7 @@ import Atividade5 from "@/atividade/Atividade5";
 import Atividade6 from "@/atividade/Atividade6";
 import Atividade7 from "@/atividade/Atividade7";
 import Atividade8 from "@/atividade/Atividade8";
+import Atividade9 from "@/atividade/Atividade9";
 
 
 
@@ -27,6 +28,7 @@ export default function Main({ paginaAtual }: MainProps) {
       {paginaAtual === "atividade6" && <Atividade6 />} 
       {paginaAtual === "atividade7" && <Atividade7 />} 
       {paginaAtual === "atividade8" && <Atividade8 />} 
+      {paginaAtual === "atividade9" && <Atividade9 />} 
     </main>
   );
 }
