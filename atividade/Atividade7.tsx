@@ -126,7 +126,7 @@ export default function Login() {
 
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-1 rounded w-20 text-center w-full"
+            className="bg-blue-500 text-white px-4 py-1 rounded w-20 text-center"
           >
             Enviar
           </button>
