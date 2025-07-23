@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Aside from "@/components/Aside";
 import Main from "@/components/Main";
 
+
 export default function PaginaComAtividades() {
   const [paginaAtual, setPaginaAtual] = useState("atividade1");
 
