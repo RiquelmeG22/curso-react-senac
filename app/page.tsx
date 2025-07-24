@@ -8,9 +8,12 @@ export default function PaginaComAtividades() {
   const [paginaAtual, setPaginaAtual] = useState("atividade1");
 
   return (
-    <div className="flex h-screen w-full">
+    <div className="flex min-h-screen w-full">
       <Aside paginaAtual={paginaAtual} setPaginaAtual={setPaginaAtual} />
-      <Main paginaAtual={paginaAtual} />
+      
+    <div className="flex-1 overflow-y-auto">
+        <Main paginaAtual={paginaAtual} />
+    </div>
     </div>
   );
 }
