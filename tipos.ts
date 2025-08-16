@@ -6,3 +6,5 @@ export type userProps = {
 
 
 
+
+// http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=cursoreact&table=users

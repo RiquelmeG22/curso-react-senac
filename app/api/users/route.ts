@@ -1,4 +1,5 @@
 import db from '@/app/api/database'
+import { request } from 'http';
 
 export async function GET(request: Request) {
   try {
@@ -46,6 +47,14 @@ export async function PUT(request: Request) {
   return new Response(JSON.stringify({ valor: true }), {
    
   });
+}
+
+
+export async function DELETE(request: Request) {
+ 
+    const {id} = await request.json();
+    await db.query('DELETE FROM usuarios WHERE id = ?', [id]);
+    return Response.json({sucesso: true})
 }
 
 

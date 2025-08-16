@@ -1,5 +1,3 @@
-
-import { headers } from "next/headers";
 import db from "../../database"
 
 export  async function GET(request: Request, {params} : {params: {id: string}}) {

@@ -37,10 +37,8 @@ import Link from 'next/link';
 export default  async function Index() {
 
     const response =  await fetch(`${process.env.NEXT_PUBLIC_API_ROUTE}/api/users`)
-    const dados : userProps[] = await response.json();
-    console.log(dados);
-
-
+    const data = await response.json();
+    const dados: userProps[] = Array.isArray(data) ? data : [];
 
   return (
     <div>
@@ -50,8 +48,13 @@ export default  async function Index() {
           <div key={item.id}>
             <h1>nome: {item.name} emial: {item.email}</h1>
             <Link href={`/editarUsuario/${item.id}`}>Editar Usuario</Link>
+            <Link href={`/deletarUsuario/${item.id}`}>Deletar Usario</Link>
+            
           </div>
         ))}
     </div>
   )
 }
+
+
+
